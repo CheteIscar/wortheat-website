@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad — Worth Eat.</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 16px; line-height: 1.7; color: #1a1a1a; background: #fff; }
+    .wrap { max-width: 740px; margin: 0 auto; padding: 48px 24px 80px; }
+    header { margin-bottom: 48px; }
+    header a { text-decoration: none; font-weight: 700; font-size: 20px; color: #1F7A4D; }
+    h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+    .meta { color: #666; font-size: 14px; margin-bottom: 40px; }
+    h2 { font-size: 18px; font-weight: 700; margin: 36px 0 12px; color: #1F7A4D; }
+    h3 { font-size: 16px; font-weight: 600; margin: 24px 0 8px; }
+    p { margin-bottom: 12px; }
+    ul { margin: 8px 0 12px 20px; }
+    ul li { margin-bottom: 6px; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    th, td { border: 1px solid #e0e0e0; padding: 10px 12px; text-align: left; vertical-align: top; }
+    th { background: #f5f5f5; font-weight: 600; }
+    a { color: #1F7A4D; }
+    footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid #e0e0e0; font-size: 14px; color: #666; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header><a href="/">Worth Eat.</a></header>
+
+  <h1>Política de Privacidad</h1>
+  <p class="meta">Versión 1.0 · Última actualización: junio de 2026</p>
+
+  <p>Esta política describe cómo Worth Eat. (en adelante "la app", "nosotros") trata tus datos personales de acuerdo con el Reglamento General de Protección de Datos (RGPD, UE 2016/679) y la Ley Orgánica 3/2018 (LOPDGDD).</p>
+
+  <h2>1. Responsable del tratamiento</h2>
+  <p>Ignacio Iscar Fernández de Alarcón, autónomo con actividad económica en España (NIF pendiente de alta). Contacto de privacidad: <a href="mailto:privacy@wortheat.es">privacy@wortheat.es</a>.</p>
+
+  <h2>2. Datos que recogemos y para qué</h2>
+  <table>
+    <tr>
+      <th>Categoría</th>
+      <th>Datos</th>
+      <th>Finalidad</th>
+      <th>Base legal</th>
+    </tr>
+    <tr>
+      <td>Identificativos</td>
+      <td>Correo electrónico</td>
+      <td>Crear cuenta y autenticación (login sin contraseña por código OTP)</td>
+      <td>Ejecución de contrato (art. 6.1.b)</td>
+    </tr>
+    <tr>
+      <td>Inventario</td>
+      <td>Ingredientes (nombre, cantidad, caducidad, ubicación)</td>
+      <td>Núcleo del servicio: alertas de caducidad y recetas</td>
+      <td>Ejecución de contrato (art. 6.1.b)</td>
+    </tr>
+    <tr>
+      <td>Preferencias</td>
+      <td>Restricciones dietéticas</td>
+      <td>Personalizar recetas generadas por IA</td>
+      <td>Consentimiento explícito en perfil (art. 6.1.a)</td>
+    </tr>
+    <tr>
+      <td>Telemetría técnica</td>
+      <td>Crashes y trazas de rendimiento (Sentry)</td>
+      <td>Calidad del servicio — diagnóstico de fallos</td>
+      <td>Interés legítimo (art. 6.1.f)</td>
+    </tr>
+    <tr>
+      <td>Eventos de producto (opt-in)</td>
+      <td>Pantallas visitadas, acciones (anonimizados)</td>
+      <td>Mejora del servicio</td>
+      <td>Consentimiento A, opt-in desmarcado por defecto (art. 6.1.a)</td>
+    </tr>
+  </table>
+
+  <p><strong>No recogemos</strong> ubicación, datos de salud, contactos, fotos, audio ni datos financieros.</p>
+
+  <h2>3. IA y tus ingredientes</h2>
+  <p>Cuando solicitas una receta, enviamos la <strong>lista de ingredientes sin ningún identificador personal</strong> (sin email, sin user_id) a la API de Claude (Anthropic, PBC, EE.UU.). Anthropic actúa como subencargado de tratamiento. La transferencia está amparada por Cláusulas Contractuales Estándar (SCC) y el EU-US Data Privacy Framework. No almacenamos el texto generado asociado a tu cuenta.</p>
+
+  <h2>4. Consentimientos opcionales</h2>
+  <p>Worth Eat. ofrece dos consentimientos opcionales, <strong>separados y desmarcados por defecto</strong>:</p>
+  <ul>
+    <li><strong>A — Mejora del servicio:</strong> eventos de uso anonimizados para analítica de producto. Ningún dato personal. Puedes revocar en Ajustes &gt; Privacidad.</li>
+    <li><strong>B — Cesión a socios:</strong> datos estadísticos agregados (sin datos individuales). Activar esto no cambia la funcionalidad de la app. Puedes revocar en Ajustes &gt; Privacidad.</li>
+  </ul>
+  <p>Ninguna función de la app queda bloqueada si rechazas estos consentimientos.</p>
+
+  <h2>5. Subencargados de tratamiento</h2>
+  <table>
+    <tr><th>Proveedor</th><th>País</th><th>Datos</th></tr>
+    <tr><td>Supabase Inc.</td><td>Irlanda (UE)</td><td>Todos los datos de backend</td></tr>
+    <tr><td>Anthropic, PBC</td><td>EE.UU. (SCC)</td><td>Lista de ingredientes anonimizada</td></tr>
+    <tr><td>Sentry (sentry.io/de)</td><td>Alemania (UE)</td><td>Crashes y breadcrumbs (sin datos personales por configuración)</td></tr>
+    <tr><td>Apple / Google</td><td>Global</td><td>Identificadores de plataforma (inevitable como store)</td></tr>
+  </table>
+
+  <h2>6. Retención de datos</h2>
+  <ul>
+    <li>Datos de cuenta e inventario: mientras exista la cuenta + 30 días tras borrado.</li>
+    <li>Registro de consentimientos: 6 años tras revocación o baja (obligación legal).</li>
+    <li>Telemetría técnica (Sentry): 90 días.</li>
+    <li>Eventos de producto (consentimiento A): 24 meses; agregaciones anónimas indefinidas.</li>
+  </ul>
+
+  <h2>7. Tus derechos</h2>
+  <p>Bajo el RGPD tienes derecho a acceder, rectificar, suprimir, oponerte, portar y limitar el tratamiento de tus datos.</p>
+  <ul>
+    <li><strong>Desde la app:</strong> Ajustes &gt; Privacidad para gestionar consentimientos; Ajustes &gt; Cuenta para descargar tus datos o eliminar tu cuenta.</li>
+    <li><strong>Por email:</strong> <a href="mailto:privacy@wortheat.es">privacy@wortheat.es</a> — respondemos en menos de 30 días.</li>
+    <li><strong>Reclamación:</strong> puedes presentar reclamación ante la <a href="https://www.aepd.es" target="_blank">Agencia Española de Protección de Datos (AEPD)</a>.</li>
+  </ul>
+
+  <h2>8. Menores</h2>
+  <p>Worth Eat. está dirigida a mayores de 14 años (art. 7 LOPDGDD). Si tienes conocimiento de que un menor ha proporcionado datos sin consentimiento parental, contáctanos en <a href="mailto:privacy@wortheat.es">privacy@wortheat.es</a>.</p>
+
+  <h2>9. Cambios en esta política</h2>
+  <p>Si modificamos esta política de forma sustancial, te lo notificaremos en la app y te pediremos que la aceptes de nuevo antes de seguir usándola.</p>
+
+  <footer>
+    <p>Worth Eat. · <a href="/terms">Términos de uso</a> · <a href="/support">Soporte</a> · <a href="mailto:privacy@wortheat.es">privacy@wortheat.es</a></p>
+  </footer>
+</div>
+</body>
+</html>
